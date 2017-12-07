@@ -6,8 +6,8 @@ end
 
 def valid_move? (board, index)
 
-if board[index] != "X" || board[index] != "O" && index.between?(1, 9)
-  elsif position_taken?(board, index)
+if (board[index] != "X" || board[index] != "O" && index.between?(1, 9)) == true
+ position_taken?(board, index)
   end
 end
 
