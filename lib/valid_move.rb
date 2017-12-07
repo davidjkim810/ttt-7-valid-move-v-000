@@ -1,8 +1,12 @@
 # code your #valid_move? method here
+def position_taken?(board,index)
+  board[index] == "X" && board[index] == "O" ||
+end
+
 
 def valid_move? (board, index)
-  if board[index] != "X" && board[index] != "O"
-  end
+ board[index] != "X" && board[index] != "O"
+
 end
 
 
