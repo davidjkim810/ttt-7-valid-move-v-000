@@ -4,7 +4,9 @@ def position_taken?(board,index)
 end
 
 def valid_move? (board, index)
-index.between?(0, 8) && board[index] != "X" || board[index] != "O"
+if index.between?(0, 8)
+  elsif board[index] != "X" || board[index] != "O"
+  end
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
